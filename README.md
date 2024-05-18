@@ -1,5 +1,8 @@
 # Valorize o Cine 🍿🎥
 
+Valorize o Cine é um perfil de incentivo à valorização do cinema nacional à população Brasileira no instagram ([@valorizeocinebr](https://www.instagram.com/valorizeocinebr/)). Este Website serve de complemento ao conteúdo do instagram, contando com listas de recomendações de filmes e outras atividades dinâmicas relacionadas ao entretenimento cinematográfico.
+
+O projeto, desenvolvido para a disciplina de [Resolução de Problemas I](https://uspdigital.usp.br/jupiterweb/obterTurma?sgldis=ACH0041) do Ciclo Básico da EACH USP contou com a colaboração de 8 estudantes e uma professora orientadora.
 
 ## Setup and Documentations:
 
