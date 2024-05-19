@@ -1,7 +1,7 @@
 import './App.css';
 
 // Telas
-import Home from './pages/home/pages/Home';
+import Home from './pages/home/Home';
 
 function App() {
   return (
