@@ -1,0 +1,14 @@
+.container_navBar > .logo_each{
+    margin: 25px 5%;
+    width: 200px;
+    height: auto;
+    z-index: 1;
+}
+
+.container_navBar > .cortina{
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    right: 0;
+}

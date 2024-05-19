@@ -1,0 +1,28 @@
+.container_home {
+    padding: 2.5% 0 0 10%;
+}
+
+.container_home > .titulo{
+    width: 50%;
+    color: white;
+    font-family: 'Brasika', sans-serif;
+    font-size: 45px;
+    line-height: 1.25;
+}
+
+.saiba_mais{
+    margin-top: 20px;
+    border: none;
+    border-radius: 100px;
+    padding: 12px 30px;
+    background-color: rgb(251, 219, 219);
+    color: #ff3131;
+    font-weight: bolder;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.saiba_mais:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #b72b2b;
+    transform: translateY(-5px);
+}
