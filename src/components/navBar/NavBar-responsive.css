@@ -1,0 +1,21 @@
+@media screen and (max-width:950px){
+    .container_navBar > .logo_each{
+        margin: 25px 5%;
+        width: 175px;
+    }
+
+    .container_navBar > .cortina{
+        height: 70%;
+    }    
+}
+
+@media screen and (max-width:620px){
+    .container_navBar > .logo_each{
+        margin: 25px 5%;
+        width: 125px;
+    }
+
+    .container_navBar > .cortina{
+        height: 33%;
+    }    
+}

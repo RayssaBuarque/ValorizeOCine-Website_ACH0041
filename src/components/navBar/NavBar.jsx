@@ -2,6 +2,7 @@ import React from 'react';
 import logoEach from '../../assets/logo_each.png'
 import cortina from '../../assets/header_decor.png';
 import './NavBar.css'
+import './NavBar-responsive.css'
 
 const NavBar = () => {
   return (

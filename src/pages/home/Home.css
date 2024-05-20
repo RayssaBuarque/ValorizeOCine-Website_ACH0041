@@ -1,3 +1,8 @@
+.container_home {
+    position: relative;
+    z-index: 5;
+}
+
 .container_home > .header {
     padding: 2.5% 0 15% 10%;
 }
@@ -29,7 +34,7 @@
 }
 
 .container_sobreNos{
-    padding: 15% 0;
+    padding: 300px 0;
     background-image: url(../../assets/holofotes.png);
     background-size:contain;
     background-repeat: no-repeat;
