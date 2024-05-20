@@ -44,7 +44,7 @@
     font-family: "Montserrat", sans-serif;
 }
 
-.container_sobreNos > .texto > h1{
+.texto > h1{
     margin-bottom: 20px;
     font-size: 40px;
 }
@@ -52,4 +52,18 @@
 .container_sobreNos > .texto > p{
     margin-bottom: 20px;
     font-size: 22px;
+}
+
+.container_historiaCinema{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    padding: 5% 15%;
+    color: white;
+}
+
+.container_historiaCinema > .imagem > img{
+    height: 500px;
+    width: 425px;
+    border-radius: 0 75px 0 0;
 }
