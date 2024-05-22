@@ -4,12 +4,32 @@ const indicacoesFilmes = [
         "titulo": "Amarelo Manga"
     },
     {
+        "id":"tt5221584",
+        "titulo": "Aquarius"
+    },
+    {
+        "id":"tt1999246",
+        "titulo": "A Vida Invisível"
+    },
+    {
         "id":"tt2762506",
         "titulo": "Bacurau"
     },
     {
+        "id":"tt0263124",
+        "titulo": "Bicho de Sete Cabeças"
+    },
+    {
+        "id":"tt0080482",
+        "titulo": "Bye Bye Brasil"
+    },
+    {
         "id":"tt1828148",
         "titulo": "Capitães da Areia"
+    },
+    {
+        "id":"tt0293007",
+        "titulo": "Carandiru"
     },
     {
         "id":"tt0140888",
@@ -20,12 +40,20 @@ const indicacoesFilmes = [
         "titulo": "Cidade de Deus"
     },
     {
+        "id":"tt15132028",
+        "titulo": "Deserto Particular"
+    },
+    {
         "id":"tt0058006",
         "titulo": "Deus e o Diabo na Terra do Sol"
     },
     {
         "id":"tt0333388",
         "titulo": "Edifício Master"
+    },
+    {
+        "id":"tt1039960",
+        "titulo": "Estômago"
     },
     {
         "id":"tt0022080",
@@ -48,8 +76,40 @@ const indicacoesFilmes = [
         "titulo": "O Céu de Suely"
     },
     {
+        "id":"tt0303408",
+        "titulo": "O Invasor"
+    },
+    {
+        "id":"tt0178585",
+        "titulo": "O Homem que Virou Suco"
+    },
+    {
         "id":"tt0257909",
-        "titulo": "O menino Maluquinho"
+        "titulo": "O Menino Maluquinho"
+    },
+    {
+        "id":"tt3183630",
+        "titulo": "O Menino e o Mundo"
+    },
+    {
+        "id":"tt0056322",
+        "titulo": "O Pagador de Promessas"
+    },
+    {
+        "id":"tt0119815",
+        "titulo": "O que é isso, companheiro?"
+    },
+    {
+        "id":"tt0895777",
+        "titulo": "Ó, Pai, Ó"
+    },
+    {
+        "id":"tt0114212",
+        "titulo": "O Quatrilho"
+    },
+    {
+        "id":"tt2190367",
+        "titulo": "O Som ao Redor"
     },
     {
         "id":"tt3742378",

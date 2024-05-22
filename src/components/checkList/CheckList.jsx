@@ -3,8 +3,8 @@ import Cookies from 'js-cookie';
 import { useEffect } from 'react';
 
 // css
-import './CheckList-responsive.css'
 import './CheckList.css'
+import './CheckList-responsive.css'
 
 // componentes
 import InfoFilme from '../infoFilme/InfoFilme';
@@ -27,6 +27,7 @@ const CheckList = ({idsFilmes}) => {
       }
       else{
         coletarDados(filme.id, apiKey);
+        setTimeout(2000);
       }
     });
   }, [apiKey]);
@@ -48,6 +49,7 @@ const CheckList = ({idsFilmes}) => {
         */
         Cookies.set(`${idFilme}_data`, JSON.stringify(data), {expires: 365 * 100})
         Dados.push(data)
+        console.log(`${data.Title} -- rating${data.imdbRating} ano:${data.Year}`)
       })
       .catch(error => {
         console.error('Error fetching data:', error);

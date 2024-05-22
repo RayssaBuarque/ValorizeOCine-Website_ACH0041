@@ -1,0 +1,19 @@
+@media screen and (max-width:670px){
+ 
+    .container_infoFilme{
+        width: 260px;
+        border: 3px solid #ff3232;
+        border-radius: 20px;
+    }
+
+    .infoFilme_texto > h1{ font-size: 16px; }
+    .infoFilme_texto > h3{ font-size: 15px; }
+    
+    .infoFilme_texto > .avaliacao > p{ font-size: 14px; }
+
+    .infoFilme_texto > .avaliacao > .rating > h2{ font-size: 25px; }
+    .infoFilme_texto > .avaliacao > .rating > img{
+        height: 25px;
+        width: 25px;
+    }
+}

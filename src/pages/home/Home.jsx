@@ -23,7 +23,7 @@ const Home = () => {
     else if(i <=19){ // Itens 10 a 19
       secoesIndicacoes[1].push(indicacoesFilmes[i])
     }
-    if(i <=29){ // Itens 20 a 29
+    else if(i <=29){ // Itens 20 a 29
       secoesIndicacoes[2].push(indicacoesFilmes[i])
     }
   }
@@ -72,8 +72,8 @@ const Home = () => {
 
                 <div className='secoes'>
                   <CheckList idsFilmes={[...secoesIndicacoes[0]]}></CheckList>
-                  {/* <CheckList idsFilmes={[1, 2, 3]}></CheckList>
-                  <CheckList idsFilmes={[1, 2, 3]}></CheckList> */}
+                  {/* <CheckList idsFilmes={[...secoesIndicacoes[1]]}></CheckList> */}
+                  {/* <CheckList idsFilmes={[...secoesIndicacoes[2]]}></CheckList> */}
                 </div>
               </div>
             </div>

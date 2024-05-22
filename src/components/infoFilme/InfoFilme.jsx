@@ -1,7 +1,7 @@
 import React from 'react';
 import Cookies from 'js-cookie';
 
-// import './InfoFilme-responsive.css'
+import './InfoFilme-responsive.css'
 import './InfoFilme.css'
 
 const InfoFilme = ({nome, id}) => {
