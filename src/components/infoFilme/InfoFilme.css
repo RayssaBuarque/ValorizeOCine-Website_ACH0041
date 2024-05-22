@@ -1,0 +1,31 @@
+.container_infoFilme{
+    padding: 10px 20px;
+    width: 400px;
+    border: 4px solid #ff3232;
+    border-radius: 20px;
+    
+    background: linear-gradient(to right, #ff3131, #ff914d);
+    font-family: "Montserrat", sans-serif;
+}
+
+.infoFilme_texto > h1{ font-size: 20px; }
+.infoFilme_texto > h3{
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.infoFilme_texto > .avaliacao > p{
+    font-size: 14px;
+    font-style: italic;
+}
+
+.avaliacao > .rating{ 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.infoFilme_texto > .avaliacao > .rating > h2{ font-size: 30px; }
+.infoFilme_texto > .avaliacao > .rating > img{
+    height: 35px;
+    width: 35px;
+}

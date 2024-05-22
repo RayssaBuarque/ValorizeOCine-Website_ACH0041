@@ -1,10 +1,13 @@
 import React from 'react';
+import Cookies from 'js-cookie';
 import { useEffect } from 'react';
 
-import Cookies from 'js-cookie';
-
+// css
 import './CheckList-responsive.css'
 import './CheckList.css'
+
+// componentes
+import InfoFilme from '../infoFilme/InfoFilme';
 
 const CheckList = ({idsFilmes}) => {
   const apiKey = process.env.REACT_APP_CLIENT_APIKEY;
@@ -55,8 +58,14 @@ const CheckList = ({idsFilmes}) => {
     <div className='container_secaoChecklist'>
       {Filmes.map( (value, index) => (
         <div className='item_check'>
-          <input type="checkbox" id={value} />
-          <label className='item' for={value}>{value.titulo}</label>
+          <input type="checkbox" id={value.id} />
+          <label className='item' for={value.id}>{value.titulo}</label>
+          <div className='infoFilme'>
+            <InfoFilme 
+              nome={value.titulo}
+              id={value.id}
+              ></InfoFilme>
+          </div>
         </div>
       ))}
 
