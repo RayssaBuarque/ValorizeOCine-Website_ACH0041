@@ -27,6 +27,8 @@ const CheckList = ({idsFilmes}) => {
     });
   }, [apiKey]);
 
+  console.log(Dados)
+
   function coletarDados(idFilme, apiKey){
 
     fetch(`https://www.omdbapi.com/?i=${idFilme}&apikey=${apiKey}`)
