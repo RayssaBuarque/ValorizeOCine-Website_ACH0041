@@ -15,6 +15,12 @@
     line-height: 1.25;
 }
 
+.faixa_divisoria{
+    position: relative;
+    top: -30px;
+    width: 100%;
+}
+
 .saiba_mais{
     margin-top: 20px;
     border: none;
@@ -71,4 +77,26 @@
     height: 500px;
     width: 425px;
     border-radius: 0 75px 0 0;
+}
+
+/* SEÇÃO DA CHECKLIST*/
+.container_checklist{
+    background-color: #191919;
+    color: white;
+    padding: 20px 0;
+}
+
+.checklist_conteudo{
+    padding: 0 15%;
+}
+
+.checklist_conteudo > .texto > h1{
+    font-family: 'Brasika', sans-serif;
+    font-size: 45px;
+}
+
+.checklist_conteudo > .secoes{
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
 }

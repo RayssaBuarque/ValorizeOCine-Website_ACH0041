@@ -1,9 +1,35 @@
 import React from 'react';
 import './Home.css'
 import './Home-responsive.css'
+
+// imagens
+import faixa from '../../assets/faixa.png'
+
+// componentes
 import NavBar from '../../components/navBar/NavBar';
+import CheckList from '../../components/checkList/CheckList';
+
+// dados
+import indicacoesFilmes from '../../data/indicacoes';
 
 const Home = () => {
+
+  // separando indicações por seção
+  const secoesIndicacoes = [ [], [], [] ];
+  for(let i=0; i< indicacoesFilmes.length; i++){
+    if(i <=9){ // Itens 0 a 9
+      secoesIndicacoes[0].push(indicacoesFilmes[i])
+    }
+    else if(i <=19){ // Itens 10 a 19
+      secoesIndicacoes[1].push(indicacoesFilmes[i])
+    }
+    if(i <=29){ // Itens 20 a 29
+      secoesIndicacoes[2].push(indicacoesFilmes[i])
+    }
+  }
+
+  // console.log(secoesIndicacoes)
+
   return (
     <>
         <NavBar></NavBar>
@@ -32,6 +58,23 @@ const Home = () => {
               </div>
               <div className="imagem">
                 <img src="https://img.freepik.com/fotos-gratis/superficie-abstrata-e-texturas-de-parede-de-pedra-branca-de-concreta_74190-8189.jpg" alt="Fotografia da Cinelândia, no Rio de Janeiro." />
+              </div>
+            </div>
+
+            <div className='container_checklist'>
+              <img className="faixa_divisoria" src={faixa} alt="Ilustração de filme analógico" />
+
+              <div className="checklist_conteudo">
+                <div className="texto">
+                  <h1>CheckList</h1>
+                  <p>Filmes nacionais que você PRECISA assistir pelo menos uma vez na vida:</p>
+                </div>
+
+                <div className='secoes'>
+                  <CheckList idsFilmes={[...secoesIndicacoes[0]]}></CheckList>
+                  {/* <CheckList idsFilmes={[1, 2, 3]}></CheckList>
+                  <CheckList idsFilmes={[1, 2, 3]}></CheckList> */}
+                </div>
               </div>
             </div>
         </div>

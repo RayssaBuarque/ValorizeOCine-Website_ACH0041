@@ -1,0 +1,28 @@
+.container_secaoChecklist {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+
+    background-color: black;
+    position: relative;
+    border-radius: 35px; /* Define o raio da borda */
+    padding: 20px; /* Ajuste conforme necessário */
+    z-index: 1; /* Para garantir que o pseudo-elemento fique atrás do conteúdo */
+}
+
+.container_secaoChecklist::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 35px; /* Define o raio da borda */
+    padding: 2px; /* Espaço para a borda gradiente */
+    background: linear-gradient(45deg, #ff3131, #ff914d);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude; /* Para garantir que o conteúdo não fique sobre o gradiente */
+    z-index: -1; /* Para garantir que o pseudo-elemento fique atrás do conteúdo */
+}
