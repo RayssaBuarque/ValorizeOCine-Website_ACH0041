@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 
 import Cookies from 'js-cookie';
 
+import './CheckList-responsive.css'
 import './CheckList.css'
 
 const CheckList = ({idsFilmes}) => {
@@ -26,8 +27,6 @@ const CheckList = ({idsFilmes}) => {
       }
     });
   }, [apiKey]);
-
-  console.log(Dados)
 
   function coletarDados(idFilme, apiKey){
 
@@ -56,8 +55,8 @@ const CheckList = ({idsFilmes}) => {
     <div className='container_secaoChecklist'>
       {Filmes.map( (value, index) => (
         <div className='item_check'>
-          <input type="checkbox" />
-          <label className='item'>{value.titulo}</label>
+          <input type="checkbox" id={value} />
+          <label className='item' for={value}>{value.titulo}</label>
         </div>
       ))}
 

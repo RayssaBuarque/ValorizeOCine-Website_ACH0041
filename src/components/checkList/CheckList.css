@@ -26,3 +26,15 @@
     mask-composite: exclude; /* Para garantir que o conteúdo não fique sobre o gradiente */
     z-index: -1; /* Para garantir que o pseudo-elemento fique atrás do conteúdo */
 }
+
+.item_check > label{
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    margin-left: 10px;
+}
+.item_check > input{
+    cursor: pointer;
+    accent-color: #ff3232;
+    height: 15px;
+    width: 15px;
+}

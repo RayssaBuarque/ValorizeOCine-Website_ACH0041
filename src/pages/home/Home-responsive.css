@@ -72,6 +72,15 @@
         border-radius: 0 0 50px 50px;
         margin-bottom: 30px;
     }
+
+    .checklist_conteudo{
+        padding: 0 10%;
+    }
+    
+    .checklist_conteudo > .texto > h1{
+        font-family: 'Brasika', sans-serif;
+        font-size: 32px;
+    }
 }
 
 @media screen and (max-width:620px){
