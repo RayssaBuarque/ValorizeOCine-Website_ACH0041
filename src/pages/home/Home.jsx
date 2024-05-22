@@ -45,7 +45,7 @@ const Home = () => {
             <div className='container_sobreNos'>
               <div className="texto">
                 <h1>Missão Artística Brasileira</h1>
-                <p>Entre os anos de 2002 a 2014, do total de ingressos de cinema vendidos no Brasil, bem menos da metade são produtos de produções nacionais. (Ancine, )</p>
+                <p>Entre os anos de 2002 a 2014, do total de ingressos de cinema vendidos no Brasil, bem menos da metade são produtos de produções nacionais. (Ancine, 2015)</p>
                 <p>O Valorize o Cine é uma iniciativa que busca incentivar a população a consumir um maior número de filmes brasileiros, e estimular uma reconexão das pessoas com o cinema nacional.</p>
               </div>
             </div>
