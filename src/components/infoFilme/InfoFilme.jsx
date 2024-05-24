@@ -1,11 +1,11 @@
 import React from 'react';
 import Cookies from 'js-cookie';
 
-import './InfoFilme-responsive.css'
 import './InfoFilme.css'
+import './InfoFilme-responsive.css'
 
 const InfoFilme = ({nome, id}) => {
-    let dados_filme = JSON.parse(Cookies.get(`${id}_data`))
+    let dados_filme = JSON.parse(Cookies.get(`${id}_data`)) // está coletando muitos dados muito rápido!!!
     
     // Dados relevantes:
     let ano = dados_filme.Year
