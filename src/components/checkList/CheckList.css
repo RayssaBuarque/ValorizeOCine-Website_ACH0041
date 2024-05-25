@@ -5,15 +5,13 @@
     width: 100%;
 
     background-color: black;
-    position: relative;
     border-radius: 35px; /* Define o raio da borda */
     padding: 20px; /* Ajuste conforme necessário */
-    z-index: 1; /* Para garantir que o pseudo-elemento fique atrás do conteúdo */
+    position: relative;
 }
 
 .container_secaoChecklist::before {
     content: "";
-    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -24,7 +22,12 @@
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
     mask-composite: exclude; /* Para garantir que o conteúdo não fique sobre o gradiente */
-    z-index: -1; /* Para garantir que o pseudo-elemento fique atrás do conteúdo */
+    position: absolute;
+    z-index: 0; /* Para garantir que o pseudo-elemento fique atrás do conteúdo */
+}
+
+.item_check{
+    position: relative;
 }
 
 .item_check > label{
@@ -39,10 +42,11 @@
     width: 15px;
 }
 
-.item_check > .infoFilme{
+.item_check > .infoFilme {
     position: absolute;
-    left: 200px;
-    z-index: 2;
+    z-index: 1000; 
+    top: 50px;
+    left: -75px;
     display: none;
 }
 

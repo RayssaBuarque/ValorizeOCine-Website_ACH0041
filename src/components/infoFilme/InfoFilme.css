@@ -1,6 +1,6 @@
 .container_infoFilme{
     position: absolute;
-    z-index: 2;
+    z-index: 1001;
 
     padding: 10px 20px;
     width: 400px;
