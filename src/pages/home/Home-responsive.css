@@ -1,7 +1,7 @@
 @media screen and (min-width:1400px) {
-    *{
+    /* *{
         background-color: green;
-    }
+    } */
 }
 @media screen and (max-width:1125px){
     /* *{
@@ -81,6 +81,10 @@
         font-family: 'Brasika', sans-serif;
         font-size: 32px;
     }
+}
+
+@media screen and (max-width:850px){
+    .secoes{ flex-direction: column; }
 }
 
 @media screen and (max-width:620px){

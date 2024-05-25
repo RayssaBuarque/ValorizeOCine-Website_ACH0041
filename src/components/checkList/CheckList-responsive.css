@@ -1,6 +1,11 @@
 @media screen and (max-width:950px){
     .item_check > label{ margin-left: 7px; }
 }
+
+@media screen and (max-width:850px){
+    .item_check > .infoFilme { left: 15px; }
+}
+
 @media screen and (max-width:710px){
     .item_check > .infoFilme {
         display: none !important; /* !important ensures that this rule takes precedence */
@@ -10,6 +15,7 @@
         display: none !important; /* Ensure it stays hidden on hover */
     }    
 }
+
 @media screen and (max-width:620px){
     .item_check > label{ font-size: 14px; }
     .item_check > input{
