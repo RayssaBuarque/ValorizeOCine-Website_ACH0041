@@ -72,11 +72,17 @@
     padding: 5% 15%;
     color: white;
 }
+.container_historiaCinema > .texto > p{
+    margin-bottom: 10px;
+    text-align: justify;
+}
 
 .container_historiaCinema > .imagem > img{
     height: 500px;
     width: 425px;
-    border-radius: 0 75px 0 0;
+    object-fit: cover;
+    border-radius: 10px 75px 10px 10px;
+    border: 5px solid white;
 }
 
 /* SEÇÃO DA CHECKLIST*/

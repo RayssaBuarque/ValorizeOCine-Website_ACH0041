@@ -30,6 +30,22 @@
     }
 }
 
+@media screen and (max-width:1115px){
+    .container_historiaCinema{
+        flex-direction: column-reverse;
+        padding: 5% 15%;
+        color: white;
+    }
+    
+    .container_historiaCinema > .imagem > img{
+        height: 325px;
+        width: 650px;
+        gap: 0;
+        border-radius: 0 0 50px 50px;
+        margin-bottom: 30px;
+    }
+}
+
 @media screen and (max-width:950px){
     .titulo > h1{
         font-size: 45px;
@@ -59,20 +75,6 @@
         width: 60%;
     }
 
-    .container_historiaCinema{
-        flex-direction: column-reverse;
-        padding: 5% 15%;
-        color: white;
-    }
-    
-    .container_historiaCinema > .imagem > img{
-        height: 325px;
-        gap: 0;
-        width: 100%;
-        border-radius: 0 0 50px 50px;
-        margin-bottom: 30px;
-    }
-
     .checklist_conteudo{
         padding: 0 10%;
     }
@@ -81,6 +83,8 @@
         font-family: 'Brasika', sans-serif;
         font-size: 32px;
     }
+
+    .container_historiaCinema > .imagem > img{ width: 500px; }
 }
 
 @media screen and (max-width:850px){
@@ -120,7 +124,7 @@
     
     .container_historiaCinema > .imagem > img{
         height: 200px;
-        width: 100%;
+        width: 325px;
         border-radius: 0 0 25px 25px;
         margin-bottom: 15px;
     }
