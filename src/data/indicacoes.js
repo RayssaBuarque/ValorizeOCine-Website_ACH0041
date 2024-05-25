@@ -12,10 +12,6 @@ const indicacoesFilmes = [
         "titulo": "A Vida Invisível"
     },
     {
-        "id":"tt2762506",
-        "titulo": "Bacurau"
-    },
-    {
         "id":"tt0263124",
         "titulo": "Bicho de Sete Cabeças"
     },
@@ -72,16 +68,20 @@ const indicacoesFilmes = [
         "titulo": "O Auto da Compadecida"
     },
     {
+        "id":"tt0144782",
+        "titulo": "O Bandido da Luz Vermelha"
+    },
+    {
         "id":"tt0841175",
         "titulo": "O Céu de Suely"
     },
     {
-        "id":"tt0303408",
-        "titulo": "O Invasor"
-    },
-    {
         "id":"tt0178585",
         "titulo": "O Homem que Virou Suco"
+    },
+    {
+        "id":"tt0196811",
+        "titulo": "Olga"
     },
     {
         "id":"tt0257909",
@@ -112,8 +112,8 @@ const indicacoesFilmes = [
         "titulo": "O Som ao Redor"
     },
     {
-        "id":"tt3742378",
-        "titulo": "Que Horas Ela Volta?"
+        "id":"tt0195324",
+        "titulo": "São Paulo, Sociedade Anônima"
     },
     {
         "id":"tt0057654",

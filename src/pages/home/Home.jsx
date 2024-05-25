@@ -1,17 +1,16 @@
 import React from 'react';
 import { useState } from 'react';
+
+// css
 import './Home.css'
 import './Home-responsive.css'
-
-// imagens
-import faixa from '../../assets/faixa.png'
-
 // componentes
 import NavBar from '../../components/navBar/NavBar';
 import CheckList from '../../components/checkList/CheckList';
-
 // dados
 import indicacoesFilmes from '../../data/indicacoes';
+// imagens
+import faixa from '../../assets/faixa.png'
 
 const Home = () => {
   // gatilho de carregamento de seções
@@ -40,8 +39,7 @@ const Home = () => {
       }
       return antigo;
     });
-  };
-
+};
 
   return (
     <>

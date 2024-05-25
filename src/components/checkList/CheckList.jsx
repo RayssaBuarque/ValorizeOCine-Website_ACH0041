@@ -1,13 +1,13 @@
-import Cookies from 'js-cookie';
 import React, { useState } from 'react';
 import { useEffect } from 'react';
 
 // css
 import './CheckList.css'
 import './CheckList-responsive.css'
-
 // componentes
 import InfoFilme from '../infoFilme/InfoFilme';
+// services
+import coletarDados from '../../services/coletarDados';
 
 const CheckList = ({idsFilmes, onLoad}) => {
   const apiKey = process.env.REACT_APP_CLIENT_APIKEY;
@@ -17,15 +17,14 @@ const CheckList = ({idsFilmes, onLoad}) => {
   // dados a serem carregados na checklist
   const [dados, setDados] = useState([]); 
 
+
   const Filmes = [...idsFilmes]
 
   useEffect(() => {
     const fetchData = async () => {
-
       // para cada um dos ids de filmes coleto seus dados
       // e coloca os resultados em uma array de retorno
-      const fetchedFilmes = await Promise.all(idsFilmes.map(async (filme) => {
-        
+      const fetchedFilmes = await Promise.all(idsFilmes.map(async (filme) => { 
         // checando existencia de dados no local storage
         let dados_filme = localStorage.getItem(`${filme.id}_data`);
         if (!dados_filme) {
@@ -49,19 +48,6 @@ const CheckList = ({idsFilmes, onLoad}) => {
       onLoad();
     }
   }, [dadosCarregados, onLoad]);
-
-  // coleta de dados via fetch da api
-  const coletarDados = async (idFilme, apiKey) => {
-    const response = await fetch(`https://www.omdbapi.com/?i=${idFilme}&apikey=${apiKey}`);
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-
-    // armazenando dados no Local Storage
-    const data = await response.json();
-    localStorage.setItem(`${idFilme}_data`, JSON.stringify(data));
-    return data;
-  };
 
   return (
     <div className='container_secaoChecklist'>

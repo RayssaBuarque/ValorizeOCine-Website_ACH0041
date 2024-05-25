@@ -12,11 +12,12 @@ const InfoFilme = ({nome, id}) => {
     // Dados relevantes:
     let ano = dados_filme.Year
     let avaliacao = dados_filme.imdbRating
+    let poster = dados_filme.Poster
 
     return (
         <div className='container_infoFilme'>
             <div className="infoFilme_poster">
-
+                <img src={poster} alt={`Pôster de ${nome}`} />
             </div>
             <div className="infoFilme_texto">
                 <h1>{nome}</h1>
