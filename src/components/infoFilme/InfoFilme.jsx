@@ -1,12 +1,14 @@
 import React from 'react';
 import Cookies from 'js-cookie';
+import { useEffect } from 'react';
 
 import './InfoFilme.css'
 import './InfoFilme-responsive.css'
 
 const InfoFilme = ({nome, id}) => {
-    let dados_filme = JSON.parse(Cookies.get(`${id}_data`)) // está coletando muitos dados muito rápido!!!
-    
+    // coletando dados do Armazenamento Local
+    let dados_filme = JSON.parse(localStorage.getItem(`${id}_data`));
+
     // Dados relevantes:
     let ano = dados_filme.Year
     let avaliacao = dados_filme.imdbRating

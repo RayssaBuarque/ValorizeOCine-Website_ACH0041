@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import './Home.css'
 import './Home-responsive.css'
 
@@ -13,6 +14,8 @@ import CheckList from '../../components/checkList/CheckList';
 import indicacoesFilmes from '../../data/indicacoes';
 
 const Home = () => {
+  // gatilho de carregamento de seções
+  const [loadCheckList, setLoadCheckList] = useState([false, false, false]);
 
   // separando indicações por seção
   const secoesIndicacoes = [ [], [], [] ];
@@ -28,7 +31,17 @@ const Home = () => {
     }
   }
 
-  // console.log(secoesIndicacoes)
+  const aprovarLoad = (index) => {
+    setLoadCheckList((antigo) => {
+      if (!antigo[index]) {
+        const gatilhos = [...antigo];
+        gatilhos[index] = true;
+        return gatilhos;
+      }
+      return antigo;
+    });
+  };
+
 
   return (
     <>
@@ -71,9 +84,23 @@ const Home = () => {
                 </div>
 
                 <div className='secoes'>
-                  <CheckList idsFilmes={[...secoesIndicacoes[0]]}></CheckList>
-                  {/* <CheckList idsFilmes={[...secoesIndicacoes[1]]}></CheckList> */}
-                  {/* <CheckList idsFilmes={[...secoesIndicacoes[2]]}></CheckList> */}
+                  <CheckList 
+                    onLoad={() => aprovarLoad(0)}
+                    idsFilmes={[...secoesIndicacoes[0]]}></CheckList>
+                {loadCheckList[0] ? (
+                  <CheckList
+                    onLoad={() => aprovarLoad(1)}
+                    idsFilmes={[...secoesIndicacoes[1]]}></CheckList>
+                ) : (
+                  <h1>Carregando...</h1>
+                )}
+                {loadCheckList[1] ? (
+                  <CheckList
+                    onLoad={() => aprovarLoad(2)}
+                    idsFilmes={[...secoesIndicacoes[2]]}></CheckList>
+                ) : (
+                  <h1>Carregando...</h1>
+                )}
                 </div>
               </div>
             </div>

@@ -42,7 +42,7 @@
 .item_check > .infoFilme{
     position: absolute;
     left: 200px;
-    z-index: 20;
+    z-index: 2;
     display: none;
 }
 

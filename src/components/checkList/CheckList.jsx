@@ -9,10 +9,10 @@ import './CheckList-responsive.css'
 // componentes
 import InfoFilme from '../infoFilme/InfoFilme';
 
-const CheckList = ({idsFilmes}) => {
+const CheckList = ({idsFilmes, onLoad}) => {
   const apiKey = process.env.REACT_APP_CLIENT_APIKEY;
   
-  // gatilho de confirmação de dados carregados
+  // gatilhos de confirmação de carregamento
   const [dadosCarregados, setDadosCarregados] = useState(false);
   // dados a serem carregados na checklist
   const [dados, setDados] = useState([]); 
@@ -25,12 +25,11 @@ const CheckList = ({idsFilmes}) => {
       // para cada um dos ids de filmes coleto seus dados
       // e coloca os resultados em uma array de retorno
       const fetchedFilmes = await Promise.all(idsFilmes.map(async (filme) => {
-        // inicialmente, tento pegar seus cookies
-        let dados_filme = Cookies.get(`${filme.id}_data`);
         
-        // Se o value do cookie for undefined (não existir), ele opta pela coleta normal
+        // checando existencia de dados no local storage
+        let dados_filme = localStorage.getItem(`${filme.id}_data`);
         if (!dados_filme) {
-          const data = await coletarDados(filme.id, apiKey);
+          const data = await coletarDados(filme.id, apiKey); // coletando se ñ existirem
           return data;
         }
         else{
@@ -45,14 +44,22 @@ const CheckList = ({idsFilmes}) => {
     fetchData();
   }, [apiKey, idsFilmes]);
 
+  useEffect(() => {
+    if (dadosCarregados) {
+      onLoad();
+    }
+  }, [dadosCarregados, onLoad]);
+
   // coleta de dados via fetch da api
   const coletarDados = async (idFilme, apiKey) => {
     const response = await fetch(`https://www.omdbapi.com/?i=${idFilme}&apikey=${apiKey}`);
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
+
+    // armazenando dados no Local Storage
     const data = await response.json();
-    Cookies.set(`${idFilme}_data`, JSON.stringify(data), { expires: 365 * 100 });
+    localStorage.setItem(`${idFilme}_data`, JSON.stringify(data));
     return data;
   };
 
