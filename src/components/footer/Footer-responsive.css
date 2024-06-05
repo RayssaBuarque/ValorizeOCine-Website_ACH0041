@@ -1,0 +1,35 @@
+@media screen and (max-width:1100px){
+    .footer_sobre{
+        width: 300px;
+    }
+
+    .footer_midias > img{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width:880px){
+    .footer_content{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .footer_sobre, .footer_integrantes{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:710px){
+    .footer_content h2{
+        font-size: 18px;
+    }  
+    .footer_content p{
+        font-size: 16px;
+    } 
+    .container_footer{
+        padding: 40px 5%;
+    } 
+}

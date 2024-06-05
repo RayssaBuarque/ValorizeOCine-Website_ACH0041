@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css'
+import './Footer-responsive.css'
 import qrCode from '../../assets/qrCode_IG.png'
 
 const Footer = () => {
