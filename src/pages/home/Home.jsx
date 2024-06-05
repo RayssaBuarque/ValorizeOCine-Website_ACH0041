@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 // css
 import './Home.css'
@@ -46,6 +46,12 @@ const Home = () => {
     });
 };
 
+  const myDivRef = useRef(null);
+
+  const scrollToDiv = () => {
+    myDivRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <>
         <NavBar></NavBar>
@@ -55,10 +61,10 @@ const Home = () => {
                 <h1>Valorize o Cine</h1>
             </div>
 
-            <button className='saiba_mais'>Saiba Mais</button>
+            <button onClick={scrollToDiv} className='saiba_mais'>Saiba Mais</button>
           </div>
 
-            <div className='container_sobreNos'>
+            <div ref={myDivRef} className='container_sobreNos'>
               <div className="texto">
                 <h1>Missão Artística Brasileira</h1>
                 <p>Entre os anos de 2002 a 2014, do total de ingressos de cinema vendidos no Brasil, bem menos da metade são produtos de produções nacionais. (Ancine, 2015)</p>

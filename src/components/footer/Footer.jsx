@@ -29,7 +29,7 @@ const Footer = () => {
           <h2>EQUIPE DE PROJETO</h2>
           <p>Profª Cristiane Kerches</p>
           <p><a href='https://www.linkedin.com/in/ana-milossi-786882306/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' target='_blank'>🏛️ Ana Luisa Milossi - GPP</a></p>
-          <p>🏛️ Mirella de Almeida - GPP</p>
+          <p><a href='https://www.instagram.com/mirla_frann?igsh=MW1ydnJsaXFtZmF0NA==' target="_blank">🏛️ Mirella de Almeida - GPP</a></p>
           <p><a href='https://www.linkedin.com/in/pedro-kaique-8a4333270/' target='_blank'>🏛️ Pedro Kaique da Silva - GPP</a></p>
           <p><a href='https://www.instagram.com/vhyttoria_/' target='_blank'>🏛️ Vitoria Santos - GPP</a></p>
           <p>🖥️ Luis Guilherme Kanazawa - SI</p>
