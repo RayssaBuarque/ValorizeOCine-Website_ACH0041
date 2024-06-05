@@ -7,6 +7,7 @@ import './Home-responsive.css'
 // componentes
 import NavBar from '../../components/navBar/NavBar';
 import CheckList from '../../components/checkList/CheckList';
+import Footer from '../../components/footer/Footer';
 // dados
 import indicacoesFilmes from '../../data/indicacoes';
 import conteudo from '../../data/conteudo';
@@ -107,6 +108,8 @@ const Home = () => {
                 </div>
               </div>
             </div>
+
+            <Footer></Footer>
         </div>
     </>
   );
