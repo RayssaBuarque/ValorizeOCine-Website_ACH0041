@@ -32,8 +32,8 @@ const Footer = () => {
           <p><a href='https://www.instagram.com/mirla_frann?igsh=MW1ydnJsaXFtZmF0NA==' target="_blank">🏛️ Mirella de Almeida - GPP</a></p>
           <p><a href='https://www.linkedin.com/in/pedro-kaique-8a4333270/' target='_blank'>🏛️ Pedro Kaique da Silva - GPP</a></p>
           <p><a href='https://www.instagram.com/vhyttoria_/' target='_blank'>🏛️ Vitoria Santos - GPP</a></p>
-          <p>🖥️ Luis Guilherme Kanazawa - SI</p>
-          <p>🖥️ Marcos Kurosawa - SI</p>
+          <p><a href='https://www.linkedin.com/in/lu%C3%ADs-kanazawa-277b71311/'>🖥️ Luis Guilherme Kanazawa - SI</a></p>
+          <p><a href='https://www.linkedin.com/in/marcos-ryoiti-kurosawa-5b12912b3/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'>🖥️ Marcos Kurosawa - SI</a></p>
           <p><a target='_blank' href='https://www.linkedin.com/in/rayssabuarque/'>🖥️ Rayssa Malheiros - SI</a></p>
           <p>🧵 Sara dos Santos - TM</p>
         </div>
