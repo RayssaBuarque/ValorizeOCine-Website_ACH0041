@@ -13,6 +13,7 @@ import indicacoesFilmes from '../../data/indicacoes';
 import conteudo from '../../data/conteudo';
 // imagens
 import faixa from '../../assets/faixa.png'
+import ContentPesquisa from '../../components/contentPesquisa/ContentPesquisa';
 
 const Home = () => {
   // coletando parágrafos de conteúdo
@@ -20,6 +21,7 @@ const Home = () => {
 
   // gatilho de carregamento de seções
   const [loadCheckList, setLoadCheckList] = useState([false, false, false]);
+  const [extraContent, setExtraContent] = useState(false);
 
   // separando indicações por seção
   const secoesIndicacoes = [ [], [], [] ];
@@ -47,7 +49,6 @@ const Home = () => {
 };
 
   const myDivRef = useRef(null);
-
   const scrollToDiv = () => {
     myDivRef.current.scrollIntoView({ behavior: 'smooth' });
   };
@@ -72,16 +73,27 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="container_historiaCinema">
-              <div className="texto">
-                <h1>Um pouco da história do cinema no Brasil</h1>
-                {textoConteudo.map((paragrafo) => (
-                  <p>{paragrafo}</p>
-                ))}
+            <div className="container_geralHistoria">
+              <div className="container_historiaCinema">
+                <div className="texto">
+                  <h1>Um pouco da história do cinema no Brasil</h1>
+                  {textoConteudo.map((paragrafo) => (
+                    <p>{paragrafo}</p>
+                  ))}
+                </div>
+                <div className="imagem">
+                  <img src={conteudo[0].imagem} alt={conteudo[0].altTextImg} />
+                </div>
               </div>
-              <div className="imagem">
-                <img src={conteudo[0].imagem} alt={conteudo[0].altTextImg} />
-              </div>
+              
+              {/* outros conteúdos da pesquisa do grupo: */}
+              { extraContent ?(
+                <div className="extraContent">
+                  <ContentPesquisa contentId={1}></ContentPesquisa>
+                </div>
+              ) : (<></>)}
+
+              <button className='saiba_mais' onClick={() => setExtraContent((!extraContent))}>Saiba Mais!</button>
             </div>
 
             <div className='container_checklist'>
