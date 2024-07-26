@@ -1,4 +1,13 @@
 .container_secaoChecklist {
+    width: 100%;
+
+    background-color: black;
+    border-radius: 35px; /* Define o raio da borda */
+    padding: 2px; /* Ajuste conforme necessário */
+    position: relative;
+}
+
+.inner_secaoChecklist {
     display: flex;
     flex-direction: column;
     gap: 10px;

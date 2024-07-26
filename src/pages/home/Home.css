@@ -21,7 +21,7 @@
     width: 100%;
 }
 
-.saiba_mais{
+button{
     margin-top: 20px;
     border: none;
     border-radius: 100px;
@@ -34,7 +34,7 @@
     font-family: "Montserrat", sans-serif;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
-.saiba_mais:hover{
+button:hover{
     cursor: pointer;
     background-color: white;
     color: #b72b2b;
@@ -120,4 +120,16 @@
     margin-top: 20px;
     display: flex;
     gap: 15px;
+}
+
+.compartilhar_checklist > h3{
+    font-family: 'Brasika', sans-serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+.compartilhar_checklist{
+    background-color: #191919;
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
 }

@@ -51,24 +51,26 @@ const CheckList = ({idsFilmes, onLoad}) => {
 
   return (
     <div className='container_secaoChecklist'>
-
-      {/* os itens da checklist serão carregados quando o gatilho estiver ativado */}
-      {dadosCarregados ? (
-        Filmes.map((value, index) => (
-          <div className='item_check' key={index}>
-            <input type="checkbox" id={value.id} />
-            <label className='item' htmlFor={value.id}>{value.titulo}</label>
-            <div className='infoFilme'>
-              <InfoFilme 
-                nome={value.titulo}
-                id={value.id}
-              />
+      <div className="inner_secaoChecklist">
+        {/* os itens da checklist serão carregados quando o gatilho estiver ativado */}
+        {dadosCarregados ? (
+          Filmes.map((value, index) => (
+            <div className='item_check' key={index}>
+              <input type="checkbox" id={value.id} />
+              <label className='item' htmlFor={value.id}>{value.titulo}</label>
+              <div className='infoFilme'>
+                <InfoFilme 
+                  nome={value.titulo}
+                  id={value.id}
+                />
+              </div>
             </div>
-          </div>
-        ))
-      ) : (
-        <h1>Carregando...</h1> // texto de espera enquanto dados não carregam 
-      )}
+          ))
+        ) : (
+          <h1>Carregando...</h1> // texto de espera enquanto dados não carregam 
+        )}
+      </div>
+
     </div>
   );
 };
