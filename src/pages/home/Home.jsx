@@ -43,6 +43,7 @@ const Home = () => {
       }
       .container_secaoChecklist {
         padding: 0 !important;
+        border: 2px solid red;
       }
     `;
     iframeDocument.head.appendChild(style);
